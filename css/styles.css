@@ -1,0 +1,302 @@
+:root {
+
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+	transition: all .3s ease-in-out;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+body, html {
+	min-height: 100%;
+	width: 100%;
+    min-width: 1238px;
+}
+
+.clear::after, .clear::before {
+	content: " ";
+	display: table;
+}
+
+.clear::after {
+	clear: both;
+}
+
+/* Main Styles */
+@font-face {
+    font-family: raleway;
+    src: url('fonts/raleway/raleway-black-webfont.eot');
+    src: url('fonts/raleway/raleway-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/raleway/raleway-black-webfont.woff2') format('woff2'),
+         url('fonts/raleway/raleway-black-webfont.woff') format('woff'),
+         url('fonts/raleway/raleway-black-webfont.ttf') format('truetype'),
+         url('fonts/raleway/raleway-black-webfont.svg#ralewayblack') format('svg');
+    font-weight: 900;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: raleway;
+    src: url('fonts/raleway/raleway-regular-webfont.eot');
+    src: url('fonts/raleway/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/raleway/raleway-regular-webfont.woff2') format('woff2'),
+         url('fonts/raleway/raleway-regular-webfont.woff') format('woff'),
+         url('fonts/raleway/raleway-regular-webfont.ttf') format('truetype'),
+         url('fonts/raleway/raleway-regular-webfont.svg#ralewayregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: raleway;
+    src: url('fonts/raleway/raleway-semibolditalic-webfont.eot');
+    src: url('fonts/raleway/raleway-semibolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/raleway/raleway-semibolditalic-webfont.woff2') format('woff2'),
+         url('fonts/raleway/raleway-semibolditalic-webfont.woff') format('woff'),
+         url('fonts/raleway/raleway-semibolditalic-webfont.ttf') format('truetype'),
+         url('fonts/raleway/raleway-semibolditalic-webfont.svg#ralewaysemibold_italic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+
+}
+@font-face {
+    font-family: 'robotolight';
+    src: url('fonts/roboto/roboto-light-webfont.eot');
+    src: url('fonts/roboto/roboto-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto/roboto-light-webfont.woff2') format('woff2'),
+         url('fonts/roboto/roboto-light-webfont.woff') format('woff'),
+         url('fonts/roboto/roboto-light-webfont.ttf') format('truetype'),
+         url('fonts/roboto/roboto-light-webfont.svg#robotolight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'robotoregular';
+    src: url('fonts/roboto/roboto-regular-webfont.eot');
+    src: url('fonts/roboto/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto/roboto-regular-webfont.woff2') format('woff2'),
+         url('fonts/roboto/roboto-regular-webfont.woff') format('woff'),
+         url('fonts/roboto/roboto-regular-webfont.ttf') format('truetype'),
+         url('fonts/roboto/roboto-regular-webfont.svg#robotoregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'robotoblack';
+    src: url('fonts/roboto/roboto-black-webfont.eot');
+    src: url('fonts/roboto/roboto-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto/roboto-black-webfont.woff2') format('woff2'),
+         url('fonts/roboto/roboto-black-webfont.woff') format('woff'),
+         url('vroboto-black-webfont.ttf') format('truetype'),
+         url('fonts/roboto/roboto-black-webfont.svg#robotoblack') format('svg');
+    font-weight: 900;
+    font-style: normal;
+
+}
+body {
+    background: #eeeeee;
+}
+.productman-header {
+    height: 180px;
+    
+}
+.productman-header-container {
+    width: 1238px;
+    margin: 0 auto;
+    padding: 0 20px;
+    border: 0;
+}
+
+.productman-header-nav {
+    overflow: hidden;
+    padding-top: 44px;
+}
+
+
+.productman-logo {
+    float:left;
+    font: 900 48px Roboto, sans-serif;
+} 
+.productman-header-nav ul {
+    float:right;
+    font-size: 0;
+    position: relative;
+    top: 38px;
+}
+.productman-header-nav li {
+    display: inline-block;
+    font: 400 18px Roboto, sans-serif;
+}
+.productman-header-nav li:first-child {
+    margin-right: 44px;
+}
+.productman-header-nav li:nth-child(2) {
+    margin-right: 38px;
+}
+
+.productman-header-nav a {
+    text-decoration:none;
+    color: #303030;
+    padding-left: 10px;
+    transition: all 0.5s ease-out ;
+}
+.productman-header-nav a:hover {
+     transform: scale(1.03);
+     color: #690800;
+}
+.productman-header-nav li:hover {
+     transform: scale(1.07);
+}
+
+.productman-main {
+    width: 1238px;
+    margin: 0 auto;
+    padding: 0 20px;
+    border: 0;
+    
+}
+.productman-article-image {
+    float: right;
+    margin-right: 95px;
+    
+}
+.productman-article-content {
+    width: 718px;
+    padding-right: 100px;
+    color: #303030;
+    text-align: right;
+}
+.productman-article-content h1 {
+    font: 900 150px Raleway, sans-serif;
+    padding-bottom: 34px;
+    text-transform: uppercase;
+}
+.productman-article-content p {
+    font: 300 24px/1.5 Roboto, sans-serif;
+    padding-left: 38px;
+    padding-bottom: 26px;
+}
+
+.productman-article-content a {
+    font: 700 24px/1.5 Roboto, sans-serif;
+    color: #e10011;
+    text-decoration: none;
+}
+.productman-article-content a:hover {
+    color: #690800;
+}
+.productman-points {
+    margin-top: 90px;}
+.productman-points ul {
+    width: 56px;
+    margin: 0 auto;
+    font-size: 0;
+}
+.productman-points li {
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    background: url("../images/blackpoint.png") no-repeat;
+    margin-left: 10px;
+    
+}
+.productman-points li:first-child {
+    background: url("../images/redpoint.png") no-repeat;
+    margin-left: 0;
+}
+.productman-footer {
+    height: 606px;
+}
+.productman-footer-container {
+    width: 743px;
+    margin: 0 auto;
+    padding: 0 20px;
+    border: 0;
+    color: #303030;
+    text-align: center;
+}
+.productman-footer-container h2 {
+    padding-top: 90px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font: 900 48px Raleway, sans-serif;   
+}
+.productman-footer-description {
+    font: 400 18px Raleway, sans-serif;
+    padding-bottom: 35px;
+}
+.productman-footer-div-form {
+    display: inline-block;
+    width: 703px;
+    line-height: 72px;
+    background: #fff;
+    border-radius: 30px 36px;
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 79px;
+}
+[for="productman-footer-input"] {
+    color: #979797;
+    padding-left: 34px;
+    padding-right: 15px; 
+}
+color: #690800;
+input[type="text"]::placeholder {
+    font-family:raleway, sans-serif;
+    font-style: italic;
+    font-weight: 600;  
+}
+input[type="text"]:hover::placeholder {
+    color: #690800;
+    
+}
+.productman-footer-btn {
+    float:right;
+    width:209px;
+    height: 73.6px;
+    background: #e10011;
+    border-bottom-right-radius: 30px 36px;
+    border-top-right-radius: 30px 36px;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: Roboto, sans-serif;
+    font-weight: 900; 
+    cursor: pointer;
+}
+.productman-footer-btn:hover {
+    background: #690800;
+}
+.productman-footer-socialnetworks {
+    width: 345px;
+    margin: 0 auto 60px auto; 
+    font-size: 0;
+}
+        
+.productman-footer-socialnetworks li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.productman-footer-socialnetworks li:last-of-type {
+    margin-right: 0;
+}
+.productman-footer-container p:last-of-type
+{
+    color:#979797
+}
+.productman-footer-container a:last-of-type {
+    text-decoration: none;
+    color: #303030;
+    font: 400 18px Raleway, sans-serif;
+}
