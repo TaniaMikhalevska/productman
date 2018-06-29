@@ -105,10 +105,11 @@ body, html {
 
 }
 body {
-    background: #eeeeee;
+    background: #eeeeee
+url(../images/bg_gradient.png) no-repeat 70% top;
 }
 .productman-header {
-    height: 180px;
+    height: 190px;
     
 }
 .productman-header-container {
@@ -120,7 +121,7 @@ body {
 
 .productman-header-nav {
     overflow: hidden;
-    padding-top: 44px;
+    padding-top: 30px;
 }
 
 
@@ -178,14 +179,14 @@ body {
     text-align: right;
 }
 .productman-article-content h1 {
-    font: 900 150px Raleway, sans-serif;
-    padding-bottom: 34px;
+    font: 900 150px/1 Raleway, sans-serif;
+    padding-bottom: 21px;
     text-transform: uppercase;
 }
 .productman-article-content p {
     font: 300 24px/1.5 Roboto, sans-serif;
     padding-left: 38px;
-    padding-bottom: 26px;
+    padding-bottom: 10px;
 }
 
 .productman-article-content a {
@@ -199,22 +200,86 @@ body {
 .productman-points {
     margin-top: 90px;}
 .productman-points ul {
-    width: 56px;
-    margin: 0 auto;
+    text-align: center;
     font-size: 0;
 }
 .productman-points li {
     display: inline-block;
     height: 12px;
     width: 12px;
-    background: url("../images/blackpoint.png") no-repeat;
+    border-radius: 6px;
+    background-color: #303030;
     margin-left: 10px;
     
 }
 .productman-points li:first-child {
-    background: url("../images/redpoint.png") no-repeat;
+    background-color: #e10011;
     margin-left: 0;
 }
+
+.productman-featured-article {
+    width: 1238px;
+    background: #fff;
+    color: #303030;
+    text-align: center;
+    padding: 107px 81px 31px 63px;
+    margin-top: 97px;
+}
+.productman-featured-article h2 {
+    font: 900 48px Raleway, sans-serif;
+    margin-bottom: 6px;
+    
+}
+.featured-article__underline {
+    letter-spacing: -3px;
+    margin-bottom: 10px;
+}
+.featured-article__description {
+    width: 560px;
+    margin: 0 auto 72px;
+    font: 400 18px/1.3 Raleway, sans-serif;
+    color: #303030;
+    
+}
+.featured-article__pictures {
+    font-size: 0;
+}
+.featured-article__picture {
+    display: inline-block;
+    margin-right: 35px;
+    margin-bottom: 35px;
+    cursor: pointer;
+    height: 387px;
+}
+
+.featured-article__picture:nth-child(2),.featured-article__picture:nth-child(5) {
+    margin-right: 0px;
+}
+.featured-article__pictures--hover {
+    position: absolute;
+    top: -100%;
+    height: 0;
+    background: #e10011;
+    font: 900 30px Roboto, sans-serif;
+}
+.pictures__description {
+    position: absolute;
+    left: 37px;
+    top: 60%;
+    color: #fff;
+    text-align: left;
+}
+.pictures__description p {
+    display: inline;
+    border-bottom: 5px solid #fff;
+    padding-bottom: 9px;
+}
+.featured-article__picture:hover .featured-article__pictures--hover{
+    position: relative;
+    top: -100%;
+    height: 100%;  
+}
+
 .productman-footer {
     height: 606px;
 }
@@ -227,14 +292,14 @@ body {
     text-align: center;
 }
 .productman-footer-container h2 {
-    padding-top: 90px;
+    padding-top: 95px;
     padding-bottom: 10px;
     text-transform: uppercase;
     font: 900 48px Raleway, sans-serif;   
 }
 .productman-footer-description {
-    font: 400 18px Raleway, sans-serif;
-    padding-bottom: 35px;
+    font: 400 18px/1.3 Raleway, sans-serif;
+    padding-bottom: 40px;
 }
 .productman-footer-div-form {
     display: inline-block;
@@ -244,20 +309,20 @@ body {
     border-radius: 30px 36px;
     text-align: left;
     font-size: 18px;
-    margin-bottom: 79px;
+    margin-bottom: 105px;
 }
 [for="productman-footer-input"] {
     color: #979797;
     padding-left: 34px;
     padding-right: 15px; 
 }
-color: #690800;
-input[type="text"]::placeholder {
+
+input[type="email"]::placeholder {
     font-family:raleway, sans-serif;
     font-style: italic;
     font-weight: 600;  
 }
-input[type="text"]:hover::placeholder {
+input[type="email"]:hover::placeholder {
     color: #690800;
     
 }
@@ -278,8 +343,7 @@ input[type="text"]:hover::placeholder {
     background: #690800;
 }
 .productman-footer-socialnetworks {
-    width: 345px;
-    margin: 0 auto 60px auto; 
+    text-align: center;
     font-size: 0;
 }
         
@@ -293,7 +357,8 @@ input[type="text"]:hover::placeholder {
 }
 .productman-footer-container p:last-of-type
 {
-    color:#979797
+    color:#979797;
+    margin-bottom: 28px;
 }
 .productman-footer-container a:last-of-type {
     text-decoration: none;
